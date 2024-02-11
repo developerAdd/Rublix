@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+    <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#111111">
+   <title>RUBLIX</title>
+   <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script defer src="js/main.js"></script>
+
+</head>
+    <body class="page__body _load">
+        <div class="loader">
+            <span class="loader__spinner"></span>
+        </div>
+        <div class="site-container">
+            <header class="header">
+  <div class="container header__container">
+    <div class="header__content">
+      <a href="/" class="logo">
+        <img src="img/svg/logo.svg" class="img-contain" width="104" height="23" alt="RUBLIX - logotype">
+      </a>
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Купить</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Продать</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Магазинам</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+            <main class="main flex-c">
+                <section class="flex-c hero _anim-items _anim-no-hide">
+    <div class="container flex-c hero__container">
+        <div class="hero__main">
+            <div class="flex-s hero__info">
+                <h1 class="hero__title">Цифровой рубль — это удобно</h1>
+                <p class="hero__text">Исследуйте новые возможности финансовой свободы и гибкости с инновационной криптовалютой, которая обеспечивает быстрые и безопасные транзакции. Наслаждайтесь удобством использования цифрового рубля для совершения платежей, инвестирования или обмена с другими пользователями по всему миру. Добро пожаловать в эру цифровых финансов, где ваша свобода находится в ваших руках!</p>
+            </div>
+            <button class="btn-reset flex-c hero__btn">RUBLX</button>
+        </div>
+    </div>
+    <div class="hero__bottom">
+        <div class="container liquidity">
+            <div class="flex-s liquidity__info">
+                <span class="liquidity__label">Текущая</span>
+                <span class="liquidity__title">Ликвидность</span>
+            </div>
+            <span class="liquidity__sum">10 000 000 ₽</span>
+        </div>
+    </div>
+</section>
+                <section class="flex-c information">
+                    <div class="information__img">
+                        <picture>
+                            <source srcset="img/model.webp" type="image/webp">
+                            <img loading="lazy" src="img/model.png" class="img-contain" width="1354" height="1354" alt="model">
+                        </picture>
+                    </div>
+                    <section class="progress">
+    <div class="container progress__container">
+        <div class="flex-c progress__content">
+            <div class="progress__top">
+                <span class="progress__title">Аирдроп токенов уже доступен!</span>
+                <div class="flex-c timer">
+                    <span class="timer__title">ОСТАЛОСЬ</span>
+                    <div id="timer" class='timer__counts'>
+                        <span class="time-block" id="days">00</span>
+                        <span>ДЕНЬ</span>
+                        <span class="time-block" id="hours">00</span>
+                        <span>:</span>
+                        <span class="time-block" id="minutes">00</span>
+                        <span>:</span>
+                        <span class="time-block" id="seconds">00</span>
+                    </div>
+                </div>
+                <a href="#" class="btn-gradient progress__btn">
+                    <span>Детальнее</span>
+                    <svg>
+                        <use xlink:href="img/sprite.svg#arrow"></use>
+                    </svg>
+                </a>
+            </div>
+            <div class="progress__bottom">
+                <div class="progress__bar">
+                    <div class="progress__value"></div>
+                </div>
+                <span class="progress__start">0%</span>
+                <span class="progress__name">ПРОГРЕСС РАЗДАЧИ</span>
+                <span class="progress__end">100%</span>
+            </div>
+        </div>
+    </div>
+</section>
+                    <section class="advantages _anim-items _anim-no-hide">
+    <div class="container flex-c advantages__container">
+        <h2 class="advantages__title">Наши преимущества</h2>
+        <span class="advantages__description">Которые доступны уже сейчас</span>
+        <div class="advantages__items">
+            <div class="flex-s advantages__item">
+                <div class="advantages__decor">
+                    <img loading="lazy" src="img/svg/decorCard.svg" class="img-contain" width="72" height="70" alt="decor">
+                </div>
+                <div class="advantages__ico">
+                    <img loading="lazy" src="img/advantage01.png" class="img-contain" width="258" height="277" alt="advantageOne">
+                </div>
+                <div class="flex-s advantages__info">
+                    <span class="advantages__name">Низкие комиссии — наше преимущество</span>
+                    <p class="advantages__text">Минимальные комиссии, максимальная выгода: с нами экономично обмениваться цифровыми валютами.</p>
+                </div>
+            </div>
+            <div class="flex-s advantages__item">
+                <div class="advantages__decor">
+                    <img loading="lazy" src="img/svg/decorCard.svg" class="img-contain" width="72" height="70" alt="decor">
+                </div>
+                <div class="advantages__ico">
+                    <img loading="lazy" src="img/advantage02.png" class="img-contain" width="235" height="237" alt="advantageTwo">
+                </div>
+                <div class="flex-s advantages__info">
+                    <span class="advantages__name">Удобная интеграция для бизнеса</span>
+                    <p class="advantages__text">С легкостью внедряемся в ваш магазин: удобная интеграция для повышения эффективности.</p>
+                </div>
+            </div>
+            <div class="flex-s advantages__item">
+                <div class="advantages__decor">
+                    <img loading="lazy" src="img/svg/decorCard.svg" class="img-contain" width="72" height="70" alt="decor">
+                </div>
+                <div class="advantages__ico">
+                    <img loading="lazy" src="img/advantage03.png " class="img-contain" width="235" height="236" alt="advantageThree">
+                </div>
+                <div class="flex-s advantages__info">
+                    <span class="advantages__name">Фиксированный курс — это стабильность</span>
+                    <p class="advantages__text">Стабильность в каждой операции: фиксированный курс для надежных транзакций.</p>
+                </div>
+            </div>
+            <div class="flex-s advantages__item">
+                <div class="advantages__decor">
+                    <img loading="lazy" src="img/svg/decorCard.svg" class="img-contain" width="72" height="70" alt="decor">
+                </div>
+                <div class="advantages__ico">
+                    <img loading="lazy" src="img/advantage04.png" class="img-contain" width="232" height="224" alt="advantageFour">
+                </div>
+                <div class="flex-s advantages__info">
+                    <span class="advantages__name">Мгновенное проведение транзакций</span>
+                    <p class="advantages__text">Мгновенные транзакции для мгновенного удовлетворения: без задержек, без ожиданий.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+                    <section class="table">
+    <div class="container table__container">
+        <div class="table__header">
+            <span class="table__description">Таблица прогноза курса
+                и развития</span>
+            <span class="table__title">на 2024 год</span>
+        </div>
+        <svg hidden>
+            <defs>
+                <radialgradient id="paint0_radial_7_187" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(598.38 60.6673) rotate(-177.96) scale(594.755 1465.82)">
+                    <stop stop-color="#3D7FFF" />
+                    <stop offset="0.68711" stop-color="#C12987" />
+                    <stop offset="0.951034" stop-color="white" stop-opacity="0" />
+                </radialgradient>
+            </defs>
+        </svg>
+        <svg hidden>
+            <defs>
+                <radialgradient id="paint0_radial_7_186" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(582.859 82.7487) rotate(177.721) scale(594.985 2200.31)">
+                    <stop stop-color="white" />
+                    <stop offset="0.812332" stop-color="white" />
+                    <stop offset="0.951034" stop-color="white" stop-opacity="0" />
+                </radialgradient>
+            </defs>
+        </svg>
+        <div class="ct-chart" id="chart">
+        </div>
+    </div>
+</section>
+                    <section class="team _anim-items _anim-no-hide">
+    <div class="team__img">
+        <img loading="lazy" src="img/svg/team.svg" class="img-cover" width="1920" height="600" alt="join team">
+    </div>
+    <div class="container flex-s team__container">
+        <h2 class="team__title">Становись частью новой цифровизации уже сейчас</h2>
+        <a href="#" class="btn-gradient team__btn">
+            <span>Детальнее</span>
+            <svg>
+                <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+        </a>
+    </div>
+</section>
+                </section>
+            </main>
+            <footer class="footer">
+  <div class="container footer__container">
+    <div class="flex-s footer__item">
+      <span class="footer__title">Главная</span>
+      <a href="#" class="footer__link">Купить</a>
+      <a href="#" class="footer__link">Продать</a>
+      <a href="shop.html" class="footer__link">Магазинам</a>
+    </div>
+    <div class="flex-s footer__item">
+      <span class="footer__title">О нас</span>
+      <a href="#" class="footer__link">Детальнее</a>
+      <a href="#" class="footer__link">Пользовательское соглашение</a>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="flex-s footer__item">
+      <span class="footer__title">Социальные сети</span>
+      <a href="#" class="footer__link">ВКонтакте</a>
+      <a href="#" class="footer__link">Twitter</a>
+      <a href="#" class="footer__link">Telegram</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+    </body>
+
+</html>

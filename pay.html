@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+
+    <head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="theme-color" content="#111111">
+   <title>RUBLIX</title>
+   <link rel="preload" href="fonts/Manrope-Bold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-ExtraBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-Medium.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="preload" href="fonts/Manrope-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <script defer src="js/main.js"></script>
+
+</head>
+    <body class="page__body">
+        <div class="site-container">
+            <header class="header">
+  <div class="container header__container">
+    <div class="header__content">
+      <a href="/" class="logo">
+        <img src="img/svg/logo.svg" class="img-contain" width="104" height="23" alt="RUBLIX - logotype">
+      </a>
+      <button class="btn-reset burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+      <nav class="nav">
+        <ul class="list-reset nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__link">Купить</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">Продать</a>
+          </li>
+          <li class="nav__item">
+            <a href="shop.html" class="nav__link">Магазинам</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__link">О нас</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+            <main class="main flex-c">
+                <section class="replenishment">
+                    <div class="container replenishment__container">
+                        <form class="flex-c replenishment__form">
+                            <h1 class="replenishment__title">Пополнение счета</h1>
+                            <div class="input">
+                                <input type="text" required>
+                                <div>
+                                    <svg class='wallet'>
+                                        <use xlink:href="img/sprite.svg#wallet"></use>
+                                    </svg>
+                                    <span>Введите ваш кошелек</span>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <input type="text" class='_number' inputmode="tel" required>
+                                <div>
+                                    <svg class='sum'>
+                                        <use xlink:href="img/sprite.svg#sum"></use>
+                                    </svg>
+                                    <span>Введите сумму</span>
+                                </div>
+                            </div>
+                            <div class="replenishment__items">
+                                <label class="replenishment__item">
+                                    <input type="radio" name='replenishmentSum'>
+                                    <span>+100 ₽</span>
+                                </label>
+                                <label class="replenishment__item">
+                                    <input type="radio" name='replenishmentSum'>
+                                    <span>+500 ₽</span>
+                                </label>
+                                <label class="replenishment__item">
+                                    <input type="radio" name='replenishmentSum'>
+                                    <span>+1000 ₽</span>
+                                </label>
+                                <label class="replenishment__item">
+                                    <input type="radio" name='replenishmentSum'>
+                                    <span>+2000 ₽</span>
+                                </label>
+                            </div>
+                            <div class="replenishment__ways">
+                                <span class="replenishment__name">Выберите способ пополнения</span>
+                                <label class="replenishment__way">
+                                    <input type="radio" name='way'>
+                                    <div class='_back'>
+                                        <div class="_value">
+                                            <svg class="card">
+                                                <use xlink:href="img/sprite.svg#card"></use>
+                                            </svg>
+                                            <span>Карта</span>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="replenishment__way">
+                                    <input type="radio" name='way'>
+                                    <div class='_back'>
+                                        <div class="_value">
+                                            <div class="sbp">
+                                                <img src="img/svg/sbp.svg" class="img-contain" width="92" height="30" alt="SBP">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </label>
+                                <label class="replenishment__way _full">
+                                    <input type="radio" name='way'>
+                                    <div class='_back'>
+                                        <div class="_value">
+                                            <svg class="money">
+                                                <use xlink:href="img/sprite.svg#money"></use>
+                                            </svg>
+                                            <span>Наличными</span>
+                                            <span class='condition'>От 1 000 000 ₽</span>
+                                        </div>
+                                    </div>
+                                </label>
+                            </div>
+                            <div class="replenishment__commission">
+                                <span>1%</span>
+                                <p>Комиссия на данный момент</p>
+                            </div>
+                            <button type='button' class="btn-reset btn-gradient replenishment__btn">
+                                <span>Пополнить</span>
+                                <svg>
+                                    <use xlink:href="img/sprite.svg#arrow"></use>
+                                </svg>
+                            </button>
+                            <span class="replenishment__description">Нажимая на кнопку продолжить — Вы автоматически соглашаетесь с <a href="#">пользовательским соглашением</a> сервиса.</span>
+                        </form>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+  <div class="container footer__container">
+    <div class="flex-s footer__item">
+      <span class="footer__title">Главная</span>
+      <a href="#" class="footer__link">Купить</a>
+      <a href="#" class="footer__link">Продать</a>
+      <a href="shop.html" class="footer__link">Магазинам</a>
+    </div>
+    <div class="flex-s footer__item">
+      <span class="footer__title">О нас</span>
+      <a href="#" class="footer__link">Детальнее</a>
+      <a href="#" class="footer__link">Пользовательское соглашение</a>
+      <a href="#" class="footer__link">Политика конфиденциальности</a>
+    </div>
+    <div class="flex-s footer__item">
+      <span class="footer__title">Социальные сети</span>
+      <a href="#" class="footer__link">ВКонтакте</a>
+      <a href="#" class="footer__link">Twitter</a>
+      <a href="#" class="footer__link">Telegram</a>
+    </div>
+  </div>
+</footer>
+
+        </div>
+    </body>
+
+</html>
